@@ -1,7 +1,7 @@
 // Page_Functionalities.js
 import { useState } from "react";
-import App from "./App";
 import Header from "./Header";
+import Title from "./Title";
 
 const Page_Functionalities = () => {
   const [Current, setCurrent] = useState(
@@ -33,7 +33,7 @@ const Page_Functionalities = () => {
         Change={Current === firstUrl ? "day" : "night"}
         toggle={dayNightToggle}
       />
-      <App Current={Current} />
+      <Title Current={Current} />
     </div>
   );
 };

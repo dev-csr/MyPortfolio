@@ -1,17 +1,71 @@
-import "./App.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Page_Functionalities from "./Page_Functionalities";
+import Header from "./Header";
 
-const App = ({ Current }) => {
+const App = () => {
   return (
-    <div className="App">
-      <div className="video_contain">
-        <video src={Current} className="video" autoPlay loop muted></video>
-        <div className="shadow"></div>
-        <div className="overlay_name">
-          <h1>Chilukuri Srikanth Reddy</h1>
-          <h3>Full Stack Developer</h3>
-        </div>
+    <Router>
+      <div>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Page_Functionalities />
+              </>
+            }
+          />
+          <Route
+            path="/About"
+            element={
+              <>
+                <Page_Functionalities />
+              </>
+            }
+          />
+          <Route
+            path="/Education"
+            element={
+              <>
+                <Header />
+              </>
+            }
+          />
+          <Route
+            path="/Projects"
+            element={
+              <>
+                <Header />
+              </>
+            }
+          />
+          <Route
+            path="/Skills"
+            element={
+              <>
+                <Header />
+              </>
+            }
+          />
+          <Route
+            path="/Contact"
+            element={
+              <>
+                <Header />
+              </>
+            }
+          />
+          <Route
+            path="/Resume"
+            element={
+              <>
+                <Header />
+              </>
+            }
+          />
+        </Routes>
       </div>
-    </div>
+    </Router>
   );
 };
 
