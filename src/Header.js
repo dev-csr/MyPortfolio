@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
+/* eslint-disable react/jsx-pascal-case */
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import logo from "./s-high-resolution-logo.png";
@@ -21,7 +23,7 @@ const Header = ({ Change, toggle }) => {
     return () => {
       document.removeEventListener("click", handleOutsideClick);
     };
-  }, [isOpen]);
+  });
 
   return (
     <nav className={`navbar ${Change}`}>

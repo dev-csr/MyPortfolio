@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
+/* eslint-disable react/jsx-pascal-case */
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Page_Functionalities from "./Page_Functionalities";
 import Header from "./Header";
