@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+.about{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
+    background-color: #F7EF8A;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+.about_text{
+    display: block;
+    position: relative;
+    padding: 20px;
+    width: 95%;
+    margin: auto;
+}
+h2{
+    display: block;
+    align-items: center;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-size: 26px;
+    font-style: normal;
+}
+.about_{
+    display: flex;
+    flex-direction: row;
+}
+.introduction,.job,.skills,.goals{
+    padding-top: 20px;
+    margin-left: 20px;
+    padding-right: 30px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-size: 16px;
+    font-style: normal;
+}
+.job{
+    padding-top: 13px;
+    padding-right: 90px;
+}
+.skills{
+    padding-top: 13px;
+    padding-right: 81px;
+}
+.goals{
+    padding-right: 88px;
+}
+p{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-size: 14px;
+    font-style: normal;
+}

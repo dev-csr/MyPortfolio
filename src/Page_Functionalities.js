@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Header from "./Header";
 import Title from "./Title";
+import Aboutme from "./Components/Aboutme";
 
 const Page_Functionalities = () => {
   const [Current, setCurrent] = useState(
@@ -34,6 +35,7 @@ const Page_Functionalities = () => {
         toggle={dayNightToggle}
       />
       <Title Current={Current} />
+      <Aboutme />
     </div>
   );
 };
