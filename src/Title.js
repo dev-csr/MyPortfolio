@@ -9,7 +9,7 @@ const Title = ({ Current }) => {
         <div className="shadow"></div>
         <div className="overlay_name">
           <h1>Chilukuri Srikanth Reddy</h1>
-          <h3>Full Stack Developer</h3>
+          <h3>Frontend Developer</h3>
         </div>
       </div>
     </div>
