@@ -35,7 +35,7 @@ const Page_Functionalities = () => {
         toggle={dayNightToggle}
       />
       <Title Current={Current} />
-      <Aboutme />
+      <Aboutme About_change={Current === firstUrl ? "day" : "night"} />
     </div>
   );
 };

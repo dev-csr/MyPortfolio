@@ -3,6 +3,7 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Page_Functionalities from "./Page_Functionalities";
 import Header from "./Header";
+import Aboutme from "./Components/Aboutme";
 
 const App = () => {
   return (
@@ -21,7 +22,8 @@ const App = () => {
             path="/About"
             element={
               <>
-                <Page_Functionalities />
+                <Header />
+                <Aboutme />
               </>
             }
           />
