@@ -37,7 +37,7 @@ const Page_Functionalities = () => {
       />
       <Title Current={Current} />
       <Aboutme About_change={Current === firstUrl ? "day" : "night"} />
-      <Skills />
+      <Skills Skills_change={Current === firstUrl ? "day" : "night"} />
     </div>
   );
 };

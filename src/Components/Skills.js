@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { fadein } from "../variants";
 import { useState, useEffect } from "react";
 
-const Skills = () => {
+const Skills = ({ Skills_change }) => {
   const data = [
     {
       image: "https://cdn-icons-png.flaticon.com/512/919/919827.png",
@@ -57,11 +57,11 @@ const Skills = () => {
           exit="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.7 }}
-          className="progress-bar"
+          className={`progress-bar ${Skills_change}`}
         >
           {data.map((item) => (
             <div
-              className="progress"
+              className={`progress ${Skills_change}`}
               style={{
                 animation: `progressFill ${item.level / 20}s ease-in forwards`,
                 width: `${item.level}%`,
@@ -80,7 +80,7 @@ const Skills = () => {
       exit="hidden"
       whileInView={"show"}
       viewport={{ once: false, amount: 0.7 }}
-      className="skill_container"
+      className={`skill_container ${Skills_change}`}
     >
       <div className="skills_title">Skills</div>
       <div className="items">
@@ -95,7 +95,11 @@ const Skills = () => {
             key={key}
           >
             <div className="item_image">
-              <img src={item.image} alt={item.title} />
+              <img
+                className={`${Skills_change}`}
+                src={item.image}
+                alt={item.title}
+              />
             </div>
             <div className="item_title">{item.title}</div>
             <br />

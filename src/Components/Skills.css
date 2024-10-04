@@ -10,6 +10,9 @@
     border-radius: 20px;
     margin-top: 10px;
   }
+  .skill_container.night{
+    background-color: rgba(61, 51, 111, 0.93);
+  }
   
   .skills_title {
     display: block;
@@ -48,6 +51,9 @@
     border-radius: 57px;
     border: 1px solid black;
   }
+  img.night{
+    border: 1px solid white;
+  }
   
   .item_title {
     font-family: "Playfair Display", serif;
@@ -66,12 +72,17 @@
     border-radius: 2px;
     overflow: hidden;
   }
-  
+  .progress-bar.night{
+    background-color: rgba(64, 28, 80, 0.93);
+  }
   .progress {
     height: 100%;
     background-color: rgba(233, 127, 45, 1);
     border-radius: 2px;
-}
+  }
+  .progress.night{
+    background-color: rgba(229, 160, 216, 0.93);
+  }
 
 @keyframes progressFill {
   0% {
