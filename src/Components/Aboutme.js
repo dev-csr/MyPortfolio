@@ -7,6 +7,7 @@ const Aboutme = ({ About_change }) => {
     <motion.div
       variants={fadein("up", 0.2)}
       initial="hidden"
+      exit="hidden"
       whileInView={"show"}
       viewport={{ once: false, amount: 0.7 }}
       className={`about ${About_change}`}

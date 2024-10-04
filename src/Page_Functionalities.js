@@ -3,6 +3,7 @@ import { useState } from "react";
 import Header from "./Header";
 import Title from "./Title";
 import Aboutme from "./Components/Aboutme";
+import Skills from "./Components/Skills";
 
 const Page_Functionalities = () => {
   const [Current, setCurrent] = useState(
@@ -36,6 +37,7 @@ const Page_Functionalities = () => {
       />
       <Title Current={Current} />
       <Aboutme About_change={Current === firstUrl ? "day" : "night"} />
+      <Skills />
     </div>
   );
 };
