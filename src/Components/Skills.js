@@ -70,7 +70,7 @@ const Skills = ({ Skills_change }) => {
           ))}
         </motion.div>
       );
-    }, 1500);
+    }, 2500);
     return () => clearTimeout(timer);
   });
   return (
