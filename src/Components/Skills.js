@@ -51,7 +51,14 @@ const Skills = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setContent(
-        <div className="progress-bar">
+        <motion.div
+          variants={fadein("right", 0.2)}
+          initial="hidden"
+          exit="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
+          className="progress-bar"
+        >
           {data.map((item) => (
             <div
               className="progress"
@@ -61,9 +68,9 @@ const Skills = () => {
               }}
             ></div>
           ))}
-        </div>
+        </motion.div>
       );
-    }, 2000);
+    }, 1500);
     return () => clearTimeout(timer);
   });
   return (
