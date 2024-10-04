@@ -1,13 +1,14 @@
 import "./Skills.css";
 import { motion } from "framer-motion";
 import { fadein } from "../variants";
+import { useState, useEffect } from "react";
 
 const Skills = () => {
   const data = [
     {
       image: "https://cdn-icons-png.flaticon.com/512/919/919827.png",
       title: "HTML",
-      level: 80, // Changed to numeric value
+      level: 80,
     },
     {
       image: "https://cdn-icons-png.flaticon.com/512/16183/16183567.png",
@@ -46,7 +47,25 @@ const Skills = () => {
       level: 50,
     },
   ];
-
+  const [content, setContent] = useState(null);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setContent(
+        <div className="progress-bar">
+          {data.map((item) => (
+            <div
+              className="progress"
+              style={{
+                animation: `progressFill ${item.level / 20}s ease-in forwards`,
+                width: `${item.level}%`,
+              }}
+            ></div>
+          ))}
+        </div>
+      );
+    }, 2000);
+    return () => clearTimeout(timer);
+  });
   return (
     <motion.div
       variants={fadein("up", 0.2)}
@@ -74,17 +93,7 @@ const Skills = () => {
             <div className="item_title">{item.title}</div>
             <br />
             <br />
-            <div className="progress-bar">
-              <div
-                className="progress"
-                style={{
-                  animation: `progressFill ${
-                    item.level / 20
-                  }s ease-in-out forwards`,
-                  width: `${item.level}%`,
-                }}
-              ></div>
-            </div>
+            {content}
           </motion.div>
         ))}
       </div>
