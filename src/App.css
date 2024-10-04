@@ -52,3 +52,6 @@ video {
   font-family: "Anton", sans-serif;
   text-align: center; 
 }
+img.moon{
+  border: none;
+}

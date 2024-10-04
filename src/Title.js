@@ -7,10 +7,9 @@ const Title = ({ Current }) => {
   return (
     <motion.div
       variants={fadein("up", 0.2)}
-      initial="show"
-      exit="hidden"
+      initial="hidden"
       whileInView={"show"}
-      viewport={{ once: false, amount: 0.7 }}
+      viewport={{ once: false, amount: 0.1 }}
       className="App"
     >
       <div className="video_contain">
