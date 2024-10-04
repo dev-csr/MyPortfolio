@@ -1,7 +1,16 @@
 import "./About_me.css";
+import { motion } from "framer-motion";
+import { fadein } from "../variants";
+
 const Aboutme = ({ About_change }) => {
   return (
-    <div className={`about ${About_change}`}>
+    <motion.div
+      variants={fadein("up", 0.2)}
+      initial="hidden"
+      whileInView={"show"}
+      viewport={{ once: false, amount: 0.7 }}
+      className={`about ${About_change}`}
+    >
       <div className="about_text">
         <h2>About Me</h2>
       </div>
@@ -32,11 +41,10 @@ const Aboutme = ({ About_change }) => {
         <div className="about_para">
           My goal is to pursue and strive to improve myself and find happiness
           in life. That is the reason I choose frontend development. It is one
-          of many professions which enable for me to create beautiful and
-          creative websites.
+          of many professions which enable for me to create creative websites.
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
