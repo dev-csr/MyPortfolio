@@ -1,7 +1,6 @@
 import "./Skills.css";
 import { motion } from "framer-motion";
 import { fadein } from "../variants";
-import { useState, useEffect } from "react";
 
 const Skills = ({ Skills_change }) => {
   const data = [
@@ -47,32 +46,7 @@ const Skills = ({ Skills_change }) => {
       level: 50,
     },
   ];
-  const [content, setContent] = useState(null);
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setContent(
-        <motion.div
-          variants={fadein("right", 0.2)}
-          initial="hidden"
-          exit="hidden"
-          whileInView={"show"}
-          viewport={{ once: false, amount: 0.7 }}
-          className={`progress-bar ${Skills_change}`}
-        >
-          {data.map((item) => (
-            <div
-              className={`progress ${Skills_change}`}
-              style={{
-                animation: `progressFill ${item.level / 20}s ease-in forwards`,
-                width: `${item.level}%`,
-              }}
-            ></div>
-          ))}
-        </motion.div>
-      );
-    }, 2500);
-    return () => clearTimeout(timer);
-  });
+
   return (
     <motion.div
       variants={fadein("up", 0.2)}
@@ -104,7 +78,26 @@ const Skills = ({ Skills_change }) => {
             <div className="item_title">{item.title}</div>
             <br />
             <br />
-            {content}
+            <motion.div
+              variants={fadein("right", 0.2)}
+              initial="hidden"
+              exit="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.7 }}
+              className={`progress-bar ${Skills_change}`}
+            >
+              {setTimeout(() => {}, 3000) && (
+                <div
+                  className={`progress ${Skills_change}`}
+                  style={{
+                    animation: `progressFill ${
+                      item.level / 20
+                    }s ease-in forwards`,
+                    width: `${item.level}%`,
+                  }}
+                ></div>
+              )}
+            </motion.div>
           </motion.div>
         ))}
       </div>
