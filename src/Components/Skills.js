@@ -53,7 +53,7 @@ const Skills = ({ Skills_change }) => {
       initial="hidden"
       exit="hidden"
       whileInView={"show"}
-      viewport={{ once: false, amount: 0.7 }}
+      viewport={{ once: false, amount: 0.1 }}
       className={`skill_container ${Skills_change}`}
     >
       <div className="skills_title">Skills</div>
@@ -83,7 +83,7 @@ const Skills = ({ Skills_change }) => {
               initial="hidden"
               exit="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
+              viewport={{ once: false, amount: 0.1 }}
               className={`progress-bar ${Skills_change}`}
             >
               {setTimeout(() => {}, 3000) && (
