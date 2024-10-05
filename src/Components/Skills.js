@@ -83,7 +83,7 @@ const Skills = ({ Skills_change }) => {
               initial="hidden"
               exit="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.1 }}
+              viewport={{ once: false, amount: 0.3 }}
               className={`progress-bar ${Skills_change}`}
             >
               {setTimeout(() => {}, 3000) && (
