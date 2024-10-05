@@ -1,8 +1,8 @@
 export const fadein = (direction, delay) => {
   return {
     hidden: {
-      y: direction === "up" ? 47 : direction === "down" ? -47 : 0,
-      x: direction === "left" ? 47 : direction === "right" ? -47 : 0,
+      y: direction === "up" ? 20 : direction === "down" ? -20 : 0,
+      x: direction === "left" ? 20 : direction === "right" ? -20 : 0,
       opacity: 0,
     },
     show: {
