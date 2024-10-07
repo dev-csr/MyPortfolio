@@ -89,3 +89,41 @@
     width: 0%;
   }
 }
+
+.skill_2{
+  display: block;
+  width: 70%;
+  color: black;
+  padding: 40px;
+  overflow: scroll;
+
+}
+
+.softskills{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.softskills-items{
+  display: grid;
+  grid-template-columns: auto auto;
+  text-align: left;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.ss-item1{
+  text-align: center;
+  width: 100px;
+  align-self: center;
+  justify-self:center;
+  margin-right: 10px;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-size: 18px;
+  font-style: normal;
+}
+.ss-item2{
+  align-items: center;
+  width: 200px;
+  height:200px;
+}

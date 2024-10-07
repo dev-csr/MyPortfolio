@@ -1,6 +1,8 @@
 import "./Skills.css";
 import { motion } from "framer-motion";
 import { fadein } from "../variants";
+import { buildStyles, CircularProgressbar } from "react-circular-progressbar";
+import "react-circular-progressbar/dist/styles.css";
 
 const Skills = ({ Skills_change }) => {
   const data = [
@@ -45,6 +47,13 @@ const Skills = ({ Skills_change }) => {
       title: "Java",
       level: 50,
     },
+  ];
+  const data1 = [
+    [
+      { name: "productivity", level: 80 },
+      { name: "Time management", level: 80 },
+      { name: "Problem solving", level: 70 },
+    ],
   ];
 
   return (
@@ -99,6 +108,33 @@ const Skills = ({ Skills_change }) => {
               )}
             </motion.div>
           </motion.div>
+        ))}
+      </div>
+      <div className="skill_2">
+        {data1.map((row, rowIndex) => (
+          <div className="softskills" key={rowIndex}>
+            {row.map((item, columnIndex) => (
+              <div className="softskills-items" key={columnIndex}>
+                <div className="ss-item1">{item.name}</div>
+                <div className="ss-item2">
+                  <CircularProgressbar
+                    value={item.level}
+                    text={`${item.level}%`}
+                    styles={buildStyles({
+                      rotation: 0.25,
+                      strokeLinecap: "butt",
+                      textSize: "16px",
+                      pathTransitionDuration: 0.5,
+                      pathColor: `rgba(222, 108, 51, ${item.level / 100})`,
+                      textColor: "black",
+                      trailColor: `rgb(252, 236, 227)`,
+                      backgroundColor: "#3e98c7",
+                    })}
+                  />
+                </div>
+              </div>
+            ))}{" "}
+          </div>
         ))}
       </div>
     </motion.div>
