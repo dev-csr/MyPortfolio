@@ -110,7 +110,14 @@ const Skills = ({ Skills_change }) => {
           </motion.div>
         ))}
       </div>
-      <div className="skill_2">
+      <motion.div
+        variants={fadein("right", 0.2)}
+        initial="hidden"
+        exit="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.3 }}
+        className="skill_2"
+      >
         {data1.map((row, rowIndex) => (
           <div className="softskills" key={rowIndex}>
             {row.map((item, columnIndex) => (
@@ -136,7 +143,7 @@ const Skills = ({ Skills_change }) => {
             ))}{" "}
           </div>
         ))}
-      </div>
+      </motion.div>
     </motion.div>
   );
 };
