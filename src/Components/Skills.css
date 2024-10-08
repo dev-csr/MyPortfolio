@@ -130,8 +130,10 @@
 }
 .ss-item2{
   align-items: center;
-  width: 200px;
-  height:200px;
+  width: 160px;
+  height:160px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 @media screen and (min-width:100px) and (max-width:769px) {
  
@@ -146,6 +148,8 @@
  }
  .ss-item2{
   width: 100px;
-  height:100px;
+  height:60px;
+  margin-top: 20px;
+  margin-bottom: 20px;
  }
 }
