@@ -51,7 +51,7 @@ const Contact = ({ Contact_change }) => {
   };
 
   return (
-    <div className="contact_style">
+    <div className={`contact_style ${Contact_change}`}>
       <div className="contact-info">
         <h1>Let's create together</h1>
         {windowWidth < 791 ? (
@@ -137,7 +137,11 @@ const Contact = ({ Contact_change }) => {
           </div>
           <br />
           <br />
-          <input className="button" type="submit" value="Send Message" />
+          <input
+            className={`button ${Contact_change}`}
+            type="submit"
+            value="Send Message"
+          />
         </motion.form>
       </div>
     </div>
