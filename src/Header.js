@@ -38,11 +38,11 @@ const Header = ({ Change, toggle }) => {
         </button>
 
         <div className={`nav-links ${isOpen ? "show" : ""} ${Change}`}>
+          <Link to="/Home">
+            <span>Home</span>
+          </Link>
           <Link to="/About">
             <span>About</span>
-          </Link>
-          <Link to="/Education">
-            <span>Education</span>
           </Link>
           <Link to="/Projects">
             <span>Projects</span>

@@ -4,6 +4,7 @@ import Header from "./Header";
 import Title from "./Title";
 import Aboutme from "./Components/Aboutme";
 import Skills from "./Components/Skills";
+import Contact from "./Components/Contact";
 
 const Page_Functionalities = () => {
   const [Current, setCurrent] = useState(
@@ -38,6 +39,7 @@ const Page_Functionalities = () => {
       <Title Current={Current} />
       <Aboutme About_change={Current === firstUrl ? "day" : "night"} />
       <Skills Skills_change={Current === firstUrl ? "day" : "night"} />
+      <Contact Contact_change={Current === firstUrl ? "day" : "night"} />
     </div>
   );
 };

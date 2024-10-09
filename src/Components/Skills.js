@@ -122,7 +122,7 @@ const Skills = ({ Skills_change }) => {
           <div className="softskills" key={rowIndex}>
             {row.map((item, columnIndex) => (
               <div className="softskills-items" key={columnIndex}>
-                <div className="ss-item1">{item.name}</div>
+                <div className={`ss-item1 ${Skills_change}`}>{item.name}</div>
                 <div className="ss-item2">
                   <CircularProgressbar
                     value={item.level}
@@ -132,9 +132,17 @@ const Skills = ({ Skills_change }) => {
                       strokeLinecap: "butt",
                       textSize: "16px",
                       pathTransitionDuration: 0.5,
-                      pathColor: `rgba(222, 108, 51, ${item.level / 100})`,
-                      textColor: "black",
-                      trailColor: `rgb(252, 236, 227)`,
+                      pathColor: `${
+                        Skills_change === "day"
+                          ? `rgba(238, 105, 10, ${item.level / 100})`
+                          : `rgba(10, 30, 89, ${item.level / 100})`
+                      }`,
+                      textColor: `${
+                        Skills_change === "day" ? `black` : `white`
+                      }`,
+                      trailColor: `${
+                        Skills_change === "day" ? `white` : `rgb(54, 78, 117)`
+                      }`,
                       backgroundColor: "#3e98c7",
                     })}
                   />
