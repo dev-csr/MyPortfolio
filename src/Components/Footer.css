@@ -3,9 +3,11 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: left;
-    width: 95%;
+    width: 100%;
     margin: auto;
     margin-top: 10px;
+    background-color: rgba(229, 207, 82, 0.8);
+    padding: 30px;
 }
 
 .Footer_elements{
