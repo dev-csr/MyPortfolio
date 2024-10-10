@@ -55,7 +55,7 @@ const Footer = ({ Footer_change }) => {
             className={`Footer_links ${Footer_change}`}
             href="mailto:srikanthchilukuri01@gmail.com"
           >
-            email me
+            Email me
           </a>
         </div>
       </div>

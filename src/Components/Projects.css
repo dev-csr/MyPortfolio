@@ -13,3 +13,8 @@
     align-items: center;
     justify-content: center;
 }
+.Project_img{
+    height:100px;
+    width: 200px;
+    border-radius: 10px;
+}

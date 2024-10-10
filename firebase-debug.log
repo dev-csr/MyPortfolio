@@ -1,0 +1,48 @@
+[debug] [2024-10-10T09:51:20.521Z] ----------------------------------------------------------------------
+[debug] [2024-10-10T09:51:20.522Z] Command:       /opt/homebrew/lib/node_modules/node/bin/node /opt/homebrew/bin/firebase deploy
+[debug] [2024-10-10T09:51:20.522Z] CLI Version:   13.22.0
+[debug] [2024-10-10T09:51:20.522Z] Platform:      darwin
+[debug] [2024-10-10T09:51:20.522Z] Node Version:  v18.20.1
+[debug] [2024-10-10T09:51:20.524Z] Time:          Thu Oct 10 2024 15:21:20 GMT+0530 (India Standard Time)
+[debug] [2024-10-10T09:51:20.524Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-10-10T09:51:20.554Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-10-10T09:51:20.555Z] > authorizing via signed-in user (srikanthchilukuri01@gmail.com)
+[debug] [2024-10-10T09:51:20.555Z] [iam] checking project sample-firebase-ai-app-cc4d1 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-10-10T09:51:20.555Z] Checked if tokens are valid: true, expires at: 1728556519689
+[debug] [2024-10-10T09:51:20.555Z] Checked if tokens are valid: true, expires at: 1728556519689
+[debug] [2024-10-10T09:51:20.556Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/sample-firebase-ai-app-cc4d1:testIamPermissions [none]
+[debug] [2024-10-10T09:51:20.556Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/sample-firebase-ai-app-cc4d1:testIamPermissions x-goog-quota-user=projects/sample-firebase-ai-app-cc4d1
+[debug] [2024-10-10T09:51:20.556Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sample-firebase-ai-app-cc4d1:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-10-10T09:52:44.629Z] ----------------------------------------------------------------------
+[debug] [2024-10-10T09:52:44.630Z] Command:       /opt/homebrew/lib/node_modules/node/bin/node /opt/homebrew/bin/firebase deploy
+[debug] [2024-10-10T09:52:44.630Z] CLI Version:   13.22.0
+[debug] [2024-10-10T09:52:44.630Z] Platform:      darwin
+[debug] [2024-10-10T09:52:44.630Z] Node Version:  v18.20.1
+[debug] [2024-10-10T09:52:44.631Z] Time:          Thu Oct 10 2024 15:22:44 GMT+0530 (India Standard Time)
+[debug] [2024-10-10T09:52:44.631Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-10-10T09:52:44.661Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-10-10T09:52:44.662Z] > authorizing via signed-in user (srikanthchilukuri01@gmail.com)
+[debug] [2024-10-10T09:52:44.662Z] [iam] checking project sample-firebase-ai-app-cc4d1 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-10-10T09:52:44.662Z] Checked if tokens are valid: true, expires at: 1728556519689
+[debug] [2024-10-10T09:52:44.662Z] Checked if tokens are valid: true, expires at: 1728556519689
+[debug] [2024-10-10T09:52:44.663Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/sample-firebase-ai-app-cc4d1:testIamPermissions [none]
+[debug] [2024-10-10T09:52:44.663Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/sample-firebase-ai-app-cc4d1:testIamPermissions x-goog-quota-user=projects/sample-firebase-ai-app-cc4d1
+[debug] [2024-10-10T09:52:44.663Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sample-firebase-ai-app-cc4d1:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-10-10T09:53:00.606Z] ----------------------------------------------------------------------
+[debug] [2024-10-10T09:53:00.607Z] Command:       /opt/homebrew/lib/node_modules/node/bin/node /opt/homebrew/bin/firebase deploy
+[debug] [2024-10-10T09:53:00.607Z] CLI Version:   13.22.0
+[debug] [2024-10-10T09:53:00.607Z] Platform:      darwin
+[debug] [2024-10-10T09:53:00.607Z] Node Version:  v18.20.1
+[debug] [2024-10-10T09:53:00.608Z] Time:          Thu Oct 10 2024 15:23:00 GMT+0530 (India Standard Time)
+[debug] [2024-10-10T09:53:00.608Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-10-10T09:53:00.639Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-10-10T09:53:00.639Z] > authorizing via signed-in user (srikanthchilukuri01@gmail.com)
+[debug] [2024-10-10T09:53:00.639Z] [iam] checking project sample-firebase-ai-app-cc4d1 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-10-10T09:53:00.640Z] Checked if tokens are valid: true, expires at: 1728556519689
+[debug] [2024-10-10T09:53:00.640Z] Checked if tokens are valid: true, expires at: 1728556519689
+[debug] [2024-10-10T09:53:00.640Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/sample-firebase-ai-app-cc4d1:testIamPermissions [none]
+[debug] [2024-10-10T09:53:00.640Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/sample-firebase-ai-app-cc4d1:testIamPermissions x-goog-quota-user=projects/sample-firebase-ai-app-cc4d1
+[debug] [2024-10-10T09:53:00.640Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sample-firebase-ai-app-cc4d1:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
