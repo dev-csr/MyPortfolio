@@ -41,7 +41,7 @@ const Page_Functionalities = () => {
       <Aboutme About_change={Current === firstUrl ? "day" : "night"} />
       <Skills Skills_change={Current === firstUrl ? "day" : "night"} />
       <Contact Contact_change={Current === firstUrl ? "day" : "night"} />
-      <Footer />
+      <Footer Footer_change={Current === firstUrl ? "day" : "night"} />
     </div>
   );
 };

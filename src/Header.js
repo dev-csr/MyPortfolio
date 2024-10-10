@@ -38,22 +38,22 @@ const Header = ({ Change, toggle }) => {
         </button>
 
         <div className={`nav-links ${isOpen ? "show" : ""} ${Change}`}>
-          <Link to="/Home">
+          <Link className="HeaderLinks" to="/Home">
             <span>Home</span>
           </Link>
-          <Link to="/About">
+          <Link className="HeaderLinks" to="/About">
             <span>About</span>
           </Link>
-          <Link to="/Projects">
+          <Link className="HeaderLinks" to="/Projects">
             <span>Projects</span>
           </Link>
-          <Link to="/Skills">
+          <Link className="HeaderLinks" to="/Skills">
             <span>Skills</span>
           </Link>
-          <Link to="/Contact">
+          <Link className="HeaderLinks" to="/Contact">
             <span>Contact</span>
           </Link>
-          <Link to="/Resume">
+          <Link className="HeaderLinks" to="/Resume">
             <span>Resume</span>
           </Link>
         </div>

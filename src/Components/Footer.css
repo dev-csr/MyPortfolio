@@ -1,3 +1,4 @@
+
 .Footer_container{
     display: flex;
     flex-direction: row;
@@ -8,16 +9,19 @@
     margin-top: 10px;
     background-color: rgba(229, 207, 82, 0.8);
     padding: 30px;
+    
 }
-
+.Footer_container.night{
+    color: white;
+    background-color: rgba(55, 107, 130, 0.8);
+}
 .Footer_elements{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-start;
     margin: auto;
     line-height: 2;
-    top:0;
 }
 .Footer_elements2{
     display: flex;
@@ -28,5 +32,44 @@
     margin-right: 25px;
     margin-left: 25px;
     line-height: 2;
-    top:0;
 }
+a{
+    display: block;
+}
+.Footer_links{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-size: 16px;
+    font-style: normal;
+}
+.Footer_links:hover{
+    background-color: rgba(243, 231, 181, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0,0.4);
+}
+.Footer_links.night:hover{
+    background-color: rgba(112, 105, 74, 0.8);
+    color:white;
+}
+.Resume{
+    margin-top: -80px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-size: 16px;
+    font-style: normal;
+}
+.Resume.night{
+    background-color: transparent;
+    
+}
+@media screen and (max-width: 769px){
+    .Footer_container{
+        padding: 10px;
+    }
+    .Footer_elements2{
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
+

@@ -63,7 +63,7 @@ img{
     align-items: center;
     justify-content: center;
 }
-a:hover{
+.HeaderLinks:hover{
     color: white;
     background-color: rgba(244, 218, 152, 0.8) ;
     padding: 5px;
@@ -71,7 +71,7 @@ a:hover{
     border: 1px solid rgba(233, 191, 85, 0.8);
 }
 
-.night a:hover{
+.night .HeaderLinks:hover{
     color: black;
     background-color: rgba(86, 178, 202, 0.52);
     border: 1px solid rgba(0, 0, 0, 0.16);
