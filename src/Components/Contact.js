@@ -52,7 +52,14 @@ const Contact = ({ Contact_change }) => {
 
   return (
     <div id="contact" className={`contact_style ${Contact_change}`}>
-      <div className="contact-info">
+      <motion.div
+        variants={fadein("right", 0.2)}
+        initial="hidden"
+        exit="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.7 }}
+        className="contact-info"
+      >
         <h1>Let's create together</h1>
         {windowWidth < 791 ? (
           <div className="emoji-middle">
@@ -83,8 +90,15 @@ const Contact = ({ Contact_change }) => {
             </a>
           </div>
         </div>
-      </div>
-      <div className="contact_form">
+      </motion.div>
+      <motion.div
+        variants={fadein("left", 0.2)}
+        initial="hidden"
+        exit="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.7 }}
+        className="contact_form"
+      >
         <h2>Contact Me</h2>
         <motion.form
           variants={fadein("left", 0.2)}
@@ -143,7 +157,7 @@ const Contact = ({ Contact_change }) => {
             value="Send Message"
           />
         </motion.form>
-      </div>
+      </motion.div>
     </div>
   );
 };

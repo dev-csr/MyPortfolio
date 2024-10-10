@@ -31,7 +31,7 @@ const Footer = ({ Footer_change }) => {
             className={`Footer_as ${Footer_change}`}
             href="http://www.aedin.com/in/chilukuri-srikanth-reddy-3b2965127"
           >
-            aedin
+            Linkedin
           </a>
         </div>
         <div>
