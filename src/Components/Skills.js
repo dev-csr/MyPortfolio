@@ -52,7 +52,7 @@ const Skills = ({ Skills_change }) => {
     [
       { name: "productivity", level: 80 },
       { name: "Time management", level: 80 },
-      { name: "Problem solving", level: 70 },
+      { name: "Problem solving", level: 80 },
     ],
   ];
 
