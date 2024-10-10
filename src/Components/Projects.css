@@ -1,8 +1,9 @@
 .projects_container{
     display: grid;
     grid-template-columns: repeat(2,auto);
-    width: 95%;
+    width: 94%;
     margin-top: 10px;
+    margin-left: 10px;
     padding: 30px;
     background-color: rgba(249, 205, 116, 0.8);
     border-radius: 20px;
@@ -14,7 +15,24 @@
     justify-content: center;
 }
 .Project_img{
-    height:100px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.project_images{
+    height: 150px;
     width: 200px;
+    border-radius: 20px;
+}
+.project_links{
+    text-align: center;
+    text-decoration: none;
+    background-color: transparent;
+    margin-top: 10px;
+    padding: 5px;
+}
+.project_links:hover{
+    background-color: transparent;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.7);
     border-radius: 10px;
 }
