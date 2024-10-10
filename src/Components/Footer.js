@@ -20,7 +20,7 @@ const Footer = ({ Footer_change }) => {
           </a>
         </div>
         <div>
-          <a className={`Footer_as ${Footer_change}`} href="contact">
+          <a className={`Footer_as ${Footer_change}`} href="#contact">
             Contact
           </a>
         </div>
@@ -36,7 +36,7 @@ const Footer = ({ Footer_change }) => {
         </div>
         <div>
           <a
-            className={`Footer_links ${Footer_change}`}
+            className={`Footer_as ${Footer_change}`}
             href="https://github.com/dev-csr"
           >
             Github
@@ -44,7 +44,7 @@ const Footer = ({ Footer_change }) => {
         </div>
         <div>
           <a
-            className={`Footer_links ${Footer_change}`}
+            className={`Footer_as ${Footer_change}`}
             href="https://www.instagram.com/srikanthchilukuri01/"
           >
             Instagram
@@ -52,7 +52,7 @@ const Footer = ({ Footer_change }) => {
         </div>
         <div>
           <a
-            className={`Footer_links ${Footer_change}`}
+            className={`Footer_as ${Footer_change}`}
             href="mailto:srikanthchilukuri01@gmail.com"
           >
             Email me
@@ -60,7 +60,14 @@ const Footer = ({ Footer_change }) => {
         </div>
       </div>
       <div className="Footer_elements">
-        <div className={`Resume ${Footer_change}`}>Resume</div>
+        <div className={`Resume ${Footer_change}`}>
+          <a
+            className={`Footer_as ${Footer_change}`}
+            href="https://drive.google.com/file/d/1BS_DiyzoRmacvATWexvsDyoebU8inWBq/view?usp=drive_link"
+          >
+            Resume
+          </a>
+        </div>
       </div>
     </div>
   );

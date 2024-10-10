@@ -52,7 +52,10 @@ const Header = ({ Change, toggle }) => {
           <a className="Headeras" href="#contact">
             <span>Contact</span>
           </a>
-          <a className="Headeras" href="#Resume">
+          <a
+            className="Headeras"
+            href="https://drive.google.com/file/d/1BS_DiyzoRmacvATWexvsDyoebU8inWBq/view?usp=drive_link"
+          >
             <span>Resume</span>
           </a>
         </div>

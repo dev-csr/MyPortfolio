@@ -1,6 +1,4 @@
 .projects_container{
-    display: grid;
-    grid-template-columns: repeat(2,auto);
     width: 94%;
     margin-top: 10px;
     margin-left: 10px;
@@ -8,20 +6,36 @@
     background-color: rgba(249, 205, 116, 0.8);
     border-radius: 20px;
 }
+.projects_container.night{
+    background-color: rgba(60, 6, 110, 0.8);
+}
 .Projects{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2,auto);
     align-items: center;
     justify-content: center;
+    gap:50px;
+    width: 95%;
+    margin-left: 40px;
+}
+h2{
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-size: 26px;
+    font-style: normal;
 }
 .Project_img{
+    width:300px;
+    height: 300px;
     border-radius: 10px;
-    padding: 10px;
+    padding: 40px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 .project_images{
-    height: 150px;
-    width: 200px;
+    height: 200px;
+    width: 300px;
     border-radius: 20px;
 }
 .project_links{
@@ -35,4 +49,23 @@
     background-color: transparent;
     box-shadow: 0 4px 8px rgba(0,0,0,0.7);
     border-radius: 10px;
+}
+
+@media screen and (min-width:100px) and (max-width:769px) {
+    .Projects{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .Project_img{
+        width: 200px;
+        height: 200px;
+        padding: 10px;
+        margin-left: -25px;
+    }
+    .project_images{
+        width:200px;
+        height: 150px;
+    }
 }
