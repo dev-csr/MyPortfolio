@@ -43,6 +43,11 @@ h2{
     background-color: transparent;
     margin-top: 10px;
     padding: 5px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-size: 16px;
+    font-style: normal;
 }
 .project_links:hover{
     background-color: transparent;
