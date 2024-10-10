@@ -13,7 +13,7 @@
 .App {
   width: 90%;
   margin: auto;
-  position: relative; /* Create positioning context */
+  position: relative;
 }
 
 .video_contain {

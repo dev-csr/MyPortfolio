@@ -6,8 +6,9 @@ import Aboutme from "./Components/Aboutme";
 import Skills from "./Components/Skills";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
+import Projects from "./Components/Projects";
 
-const Page_Functionalities = () => {
+const Home = () => {
   const [Current, setCurrent] = useState(
     "https://cdn.pixabay.com/video/2022/10/19/135658-764361528_large.mp4"
   );
@@ -32,13 +33,14 @@ const Page_Functionalities = () => {
   );
 
   return (
-    <div>
+    <div id="Home">
       <Header
         Change={Current === firstUrl ? "day" : "night"}
         toggle={dayNightToggle}
       />
       <Title Current={Current} />
       <Aboutme About_change={Current === firstUrl ? "day" : "night"} />
+      <Projects Projects_change={Current === firstUrl ? "day" : "night"} />
       <Skills Skills_change={Current === firstUrl ? "day" : "night"} />
       <Contact Contact_change={Current === firstUrl ? "day" : "night"} />
       <Footer Footer_change={Current === firstUrl ? "day" : "night"} />
@@ -46,4 +48,4 @@ const Page_Functionalities = () => {
   );
 };
 
-export default Page_Functionalities;
+export default Home;

@@ -1,7 +1,6 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 /* eslint-disable react/jsx-pascal-case */
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import logo from "./s-high-resolution-logo.png";
 import "./Component.css";
 
@@ -38,24 +37,24 @@ const Header = ({ Change, toggle }) => {
         </button>
 
         <div className={`nav-links ${isOpen ? "show" : ""} ${Change}`}>
-          <Link className="HeaderLinks" to="/Home">
+          <a className="Headeras" href="#Home">
             <span>Home</span>
-          </Link>
-          <Link className="HeaderLinks" to="/About">
+          </a>
+          <a className="Headeras" href="#about">
             <span>About</span>
-          </Link>
-          <Link className="HeaderLinks" to="/Projects">
+          </a>
+          <a className="Headeras" href="#projects">
             <span>Projects</span>
-          </Link>
-          <Link className="HeaderLinks" to="/Skills">
+          </a>
+          <a className="Headeras" href="#skills">
             <span>Skills</span>
-          </Link>
-          <Link className="HeaderLinks" to="/Contact">
+          </a>
+          <a className="Headeras" href="#contact">
             <span>Contact</span>
-          </Link>
-          <Link className="HeaderLinks" to="/Resume">
+          </a>
+          <a className="Headeras" href="#Resume">
             <span>Resume</span>
-          </Link>
+          </a>
         </div>
       </div>
     </nav>

@@ -51,7 +51,7 @@ const Contact = ({ Contact_change }) => {
   };
 
   return (
-    <div className={`contact_style ${Contact_change}`}>
+    <div id="contact" className={`contact_style ${Contact_change}`}>
       <div className="contact-info">
         <h1>Let's create together</h1>
         {windowWidth < 791 ? (

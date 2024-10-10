@@ -1,42 +1,37 @@
 import "./Footer.css";
-import Aboutme from "./Aboutme";
-import { Link } from "react-router-dom";
-import Skills from "./Skills";
-import Contact from "./Contact";
-import Projects from "./Projects";
 
 const Footer = ({ Footer_change }) => {
   return (
     <div className={`Footer_container ${Footer_change}`}>
       <div className="Footer_elements">
         <div>
-          <Link className={`Footer_links ${Footer_change}`} href={Aboutme}>
+          <a className={`Footer_as ${Footer_change}`} href="#about">
             About Me
-          </Link>
+          </a>
         </div>
         <div>
-          <Link className={`Footer_links ${Footer_change}`} href={Projects}>
+          <a className={`Footer_as ${Footer_change}`} href="#projects">
             Projects
-          </Link>
+          </a>
         </div>
         <div>
-          <Link className={`Footer_links ${Footer_change}`} href={Skills}>
+          <a className={`Footer_as ${Footer_change}`} href="#skills">
             Skills
-          </Link>
+          </a>
         </div>
         <div>
-          <Link className={`Footer_links ${Footer_change}`} href={Contact}>
+          <a className={`Footer_as ${Footer_change}`} href="contact">
             Contact
-          </Link>
+          </a>
         </div>
       </div>
       <div className="Footer_elements2">
         <div>
           <a
-            className={`Footer_links ${Footer_change}`}
-            href="http://www.linkedin.com/in/chilukuri-srikanth-reddy-3b2965127"
+            className={`Footer_as ${Footer_change}`}
+            href="http://www.aedin.com/in/chilukuri-srikanth-reddy-3b2965127"
           >
-            Linkedin
+            aedin
           </a>
         </div>
         <div>

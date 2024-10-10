@@ -5,6 +5,7 @@ import { fadein } from "../variants";
 const Aboutme = ({ About_change }) => {
   return (
     <motion.div
+      id="about"
       variants={fadein("up", 0.2)}
       initial="hidden"
       exit="hidden"

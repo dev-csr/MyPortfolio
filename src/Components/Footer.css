@@ -36,18 +36,18 @@
 a{
     display: block;
 }
-.Footer_links{
+.Footer_as{
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-weight: normal;
     font-size: 16px;
     font-style: normal;
 }
-.Footer_links:hover{
+.Footer_as:hover{
     background-color: rgba(243, 231, 181, 0.8);
     box-shadow: 0 4px 8px rgba(0, 0, 0,0.4);
 }
-.Footer_links.night:hover{
+.Footer_as.night:hover{
     background-color: rgba(112, 105, 74, 0.8);
     color:white;
 }

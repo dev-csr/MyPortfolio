@@ -58,6 +58,7 @@ const Skills = ({ Skills_change }) => {
 
   return (
     <motion.div
+      id="skills"
       variants={fadein("up", 0.2)}
       initial="hidden"
       exit="hidden"
