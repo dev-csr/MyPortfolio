@@ -20,6 +20,40 @@
     background-color: rgba(92, 13, 144, 0.93);
     color: white;
 }
+.sun_div{
+    cursor: pointer;
+    padding: 7px;
+    background-color: rgba(202, 196, 184, 0.8);
+    border-radius: 20px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-size: 14px;
+    font-style: normal;
+}
+.sun_div:hover{
+    background-color: rgba(182, 167, 129, 0.8);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4) ;
+    transition: box-shadow 0.3s ease;
+}
+
+.moon_div{
+    cursor:pointer;
+    padding: 5px;
+    background-color: rgba(173, 133, 200, 0.93);
+    border-radius: 20px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-size: 14px;
+    font-style: normal;
+}
+.moon_div:hover{
+    background-color: rgba(101, 76, 119, 0.93);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4) ;
+    transition: box-shadow 0.3s ease;
+}
+
 .navbar-container{
     position: relative;
     display: flex;
@@ -39,6 +73,11 @@ a{
     font-size: 16px;
     align-items: center;
     justify-content: center;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-size: 16px;
+    font-style: normal;
 
 }
 .night a{
@@ -102,6 +141,7 @@ img{
     .navbar-container{
         flex-direction: column;
         align-items: flex-start;
+        background-color: transparent;
         width: 95%;
         top: 0;
         left: 0;
@@ -130,7 +170,7 @@ img{
     .show a{
         display: block;
         flex-direction: column;
-        background-color: rgba(248, 238, 213, 0.8);
+        background-color: transparent;
         width:95%;
         text-align: left;
         padding: 10px 20px;

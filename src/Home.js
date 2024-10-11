@@ -25,9 +25,15 @@ const Home = () => {
   const dayNightToggle = (
     <div className="day_night" onClick={handleClick}>
       {Current === firstUrl ? (
-        <img src="/brightness.png" alt="sun" className="sun" />
+        <div className="sun_div">
+          <img src="/brightness.png" alt="sun" className="sun" /> Switch to dark
+          mode
+        </div>
       ) : (
-        <img src="/moon.png" alt="moon" className="moon" />
+        <div className="moon_div">
+          <img src="/moon.png" alt="moon" className="moon" />
+          Switch to light mode
+        </div>
       )}
     </div>
   );
