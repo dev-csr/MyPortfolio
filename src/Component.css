@@ -1,16 +1,17 @@
+.Home{
+    width: 100%;
+}
 .navbar{
   position: relative;
   width: 95%;
   justify-content: center;
   align-items: center;
-  top: 0;
-  left: 0;
+  margin: 0 auto;
   padding: 5px 10px;
   background-color: rgba(248, 238, 213, 0.8);
   color: black;
   border-radius: 20px;
-  margin-bottom: 20px;
-  margin-left: 15px;
+  margin-bottom: 10px;
 }
 .navbar.night{
     background-color: rgba(92, 13, 144, 0.93);
@@ -94,9 +95,7 @@ img{
 }
 
 @media screen and (max-width: 768px) {
-    .navbar{
-        margin-right: 15px;
-    }
+    
     .menu-toggle{
         display: block;
     }
