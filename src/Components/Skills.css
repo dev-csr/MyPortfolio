@@ -95,7 +95,7 @@
   width: 95%;
   color: black;
   padding: 40px;
-  overflow: scroll;
+  overflow: hidden;
   margin-right: 20px;
 }
 
